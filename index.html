@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Angular 2 QuickStart</title>
+    <!-- 1. Load libraries -->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/es6-promise/dist/es6-promise.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/ng2-emulation/dist/release/ng2-emulation-bundle.js"></script>
+    <script src="node_modules/simple-html-tokenizer/dist/simple-html-tokenizer.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+        System.config({
+            defaultJSExtensions: true,
+            map: {
+                "HTML5Tokenizer": "/node_modules/simple-html-tokenizer/dist/simple-html-tokenizer"
+            },
+            packages: {
+                app: {
+                    format: 'register'                   
+                }
+
+            }
+        });
+        System.import('app/boot');
+            //.then(null, console.error.bind(console));
+    </script>
+</head>
+<!-- 3. Display the application -->
+
+<body>
+    <my-app>Loading...</my-app>
+</body>
+
+</html>
