@@ -1,4 +1,4 @@
-# Angular 2 Hero Tutorial using ng2-emulation
+# Angular 2 Hero Tutorial using Ng2Emulation (https://github.com/tolemac/Ng2Emulation)
 
 Run demo:
 
